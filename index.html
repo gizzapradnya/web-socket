@@ -10,17 +10,17 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #e0e5ec;
-      color: #333;
+      background-color: #b34446;
+      color: #1e1717;
     }
 
-    .container {
+    .container { 
       max-width: 900px;
       margin: 50px auto;
       padding: 40px;
-      background-color: white;
+      background-color: rgb(210, 180, 180);
       border-radius: 15px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 30px #8e6f6f1a;
       transition: transform 0.3s ease;
     }
 
@@ -29,7 +29,7 @@
     }
 
     h1 {
-      color: #4A90E2;
+      color: #b51b6d;
       font-size: 2.8em;
       margin-bottom: 25px;
       text-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -38,7 +38,7 @@
     .status {
       font-size: 1.2em;
       padding: 12px;
-      color: #28a745;
+      color: #ce6cdb;
       background-color: #d4edda;
       border-radius: 5px;
       margin-bottom: 20px;
@@ -47,7 +47,7 @@
     }
 
     .status.error {
-      color: #dc3545;
+      color: #aa0a1a;
       background-color: #f8d7da;
     }
 
@@ -67,7 +67,7 @@
       padding: 15px 30px;
       font-size: 1.2em;
       color: white;
-      background: linear-gradient(135deg, #4A90E2, #357ABD);
+      background: linear-gradient(135deg, #99878f, #357ABD);
       border: none;
       border-radius: 8px;
       cursor: pointer;
@@ -153,7 +153,8 @@
       output.scrollTop = output.scrollHeight;  // Auto-scroll ke bawah
     };
 
-    ws.onerror = (err) => {
+    ws.onerror = (err) => 
+      ws.onerror = (err) => {
       status.textContent = `Error: ${err.message}`;
       status.classList.remove('status', 'closed');
       status.classList.add('error');
